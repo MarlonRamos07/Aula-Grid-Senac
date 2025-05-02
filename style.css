@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --vinho:#8D0606;
+    --cinza-fundo:#C4C4C4;
+    --cinza-pricipal: #8C8888;
+    --preto:#000;
+    --branco:#FFF;
+    --cinza-claro: #D9D9D9;
+
+}
+
+
+.cabecalho {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.5rem;
+}
+.menu__lista {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+}
+.menu__lista a{
+    text-decoration: none;
+    color:var(--cinza-pricipal);
+    font-family: 'Roboto';
+}
+.banner {
+    height: 70vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/banner.jpg);
+    background-size: cover;
+}
+.banner__titulo {
+    color:var(--branco);
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+    font-family: Pacifico;
+    font-size: 5.0625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.receitas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    margin: 2rem 0;
+}
+.receitas__titulo {
+    color: var(--vinho);    
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 3.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.receitas__texto {
+    color: var(--cinza-pricipal);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 62.0625rem;
+    height: 10.5rem;
+}
+
+.receitas__card img {
+    width:100%;
+}
+
+.receitas___container {
+    background-color: var(--cinza-claro);
+    display:grid;   
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 30rem);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    width:100%;
+
+
+
+}
+.receitas__card {
+    width:17.875rem;
+    border:1px solid var(--cinza-fundo);
+    height:24rem;
+    border-radius: 0.125rem;
+}
+.card__conteudo {
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.2rem;
+    justify-content: center;
+    height: 50%;
+    
+}
+.card__titulo {
+}
+.card__texto {
+}
+.card__botao {
+}
